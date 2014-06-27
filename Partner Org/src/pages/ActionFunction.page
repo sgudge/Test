@@ -1,0 +1,14 @@
+<apex:page controller="MyController" tabStyle="Account" >
+
+<script>
+   window.onload=function()
+   {
+     updateInfo();
+   };
+</script> 
+
+    <apex:form >
+   <apex:outputPanel id="dummy"></apex:outputPanel>
+      <apex:actionFunction name="updateInfo" action="{!save}" reRender="dummy"/> 
+    </apex:form>
+</apex:page>
